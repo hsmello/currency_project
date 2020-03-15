@@ -17,14 +17,13 @@ export default function FormPropsTextFields() {
     return (
       <form className={classes.root} noValidate autoComplete="off">
         <div>
-          <TextField required id="standard-required" label="Required" defaultValue="Hello World" />
-          <TextField disabled id="standard-disabled" label="Disabled" defaultValue="Hello World" />
-          <TextField
-            id="standard-password-input"
-            label="Password"
-            type="password"
-            autoComplete="current-password"
-          />
+            <TextField
+                required
+                id="outlined-required"
+                label="Required"
+                defaultValue="Hello World"
+                variant="outlined"
+            />
       </div>
     </form>
   );

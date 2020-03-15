@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import MyButton from './Layout/Button.js'
 
 function App() {
   const [valueUSD, setValueUSD] = useState("");
@@ -24,23 +25,14 @@ function App() {
         value={valueUSD}
         onChange={(event)=>{onChangeInput(event)}} 
       />
-      <MyButton myButtonLabel="Converter" handleButtonClick={acaoQuandoClick}>
+      <div>
+        <MyButton myButtonLabel="Converter" handleButtonClick={acaoQuandoClick}>
 
-      </MyButton>
-      {valueConverted}      
+        </MyButton>
+        {valueConverted}      
+      </div>
     </form>
   );
 }
-
-function MyButton(props) {
-  return (
-    <div>
-      <button onClick={()=>{props.handleButtonClick()}} type="button">
-        {props.myButtonLabel}
-      </button>
-    </div>
-  )
-}
-
 
 export default App;
