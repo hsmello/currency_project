@@ -13,8 +13,7 @@ function App() {
   function onChangeInput(event) {
     var inputValue = Number(event.target.value)
     if (typeof inputValue === "number") {
-      setValueUSD(inputValue)
-      // setValueConverted(valueUSD * 4.5)
+      setValueUSD(inputValue)s
     }
   }
 
