@@ -5,7 +5,9 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles(theme => ({
     root: {
       '& > *': {
-        margin: theme.spacing(1),
+        margin: theme.spacing(0),
+        boxShadow: '2px 2px 5px 0px rgba(100, 105, 50, .3)',
+        // color: 'black',
       },
     },
   }));
@@ -15,7 +17,9 @@ const useStyles = makeStyles(theme => ({
 
     return (
         <div className={classes.root}>
-            <Button onClick={()=>{props.handleButtonClick()}} variant='outlined' color='primary'>
+            <Button onClick={()=>{props.handleButtonClick()}} 
+              variant='outlined' 
+              color='primary'>
                 {props.myButtonLabel}
             </Button>
         </div>
