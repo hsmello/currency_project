@@ -19,6 +19,6 @@ export default function MyComboBoxList(props) {
 
 const currencies = [
   { title: 'US Dollar', curAbr: 'USD' },
-  { title: 'Euro', curAbr: 'EUR' },
+  { title: 'Brazilian Real', curAbr: 'BRL' },
   { title: 'Great Britain Pound', curAbr: 'GBP' },
 ];
